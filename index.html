@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <link rel="" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="mainscreen">
+    <div class="up" id="up">
+        <label><a href="#">Казахстан</a></label><label>Соискателям</label><label><a href="#">Работодателям</a></label>
+    </div>
+    <div class="menurow">
+        <div class="upmenu" id="upmenu">
+            <div class="upmenu-item1"><i class='bx bxs-circle'></i></div>
+            <div class="upmenu-item2"><a href="#">Помощь</a></div>
+
+            <div class="upmenu-item3">
+                <label><p>Ищу работу</p></label>
+                <label><i class='bx bx-chevron-down'></i></label>
+            </div>
+        </div>
+
+        <div class="upmenuright" id="upmenuright">
+            <button class="find" id="find"><i class='bx bx-search-alt'></i>Поиск</button>
+            <button class=" register" id="register">Создать резюме</button>
+            <button class=" voiti" id="voiti">Войти</button>
+            <button class=" voiti2" id="voiti2"><i class='bx bx-search-alt'></i>Войти</button>
+            <div class="icon"><i class='bx bx-menu'></i></div>
+        </div>
+    </div>
+
+     
+
+
+    <div class="login" id="login">
+        <h3>Поиск работы</h3>
+        <div class="input">
+            <input type="text" id="logininput" placeholder="Электронная почта" required>
+        </div>
+        <a href="#">Войти с паролем</a>
+        <button type="submit" class="continue" id="continue1">Продолжить</button>
+        <div class="icons">
+            <label><i class='bx bxl-instagram'></i></label>
+            <label><i class='bx bxl-google' ></i></label>
+            <label><i class='bx bxl-gmail' ></i></label>
+            <label><i class='bx bxl-facebook' ></i></label>
+        </div>
+
+    </div>
+
+
+    <div class="poisk" id="poisk">
+        <h3>Поиск сотрудников</h3>
+        <h5>Размещение вакансий и доступ к базе резюме</h5>
+        <button class="button" id="button">Я ищу сотрудников</button>
+    </div>
+
+
+
+    <div class="password" id="password">
+        <div class="some">
+            <h3>Отправили код на</h3> <span class="displayLogin" id="displayLogin"></span>
+        </div>
+        <p>Напишите его, чтобы подтвердить, что это вы, а не кто-то другой входит в личный кабинет</p>
+        <div class="input">
+            <input type="password" placeholder="Введите код" required>
+        </div>
+        <a href="#">Получить новый код</a>
+        <button class="btn">Подтвердить</button>
+        
+
+    </div>
+
+
+
+    <div class="underpoisk" id="underpoisk">
+        <p>Нажимая «Продолжить» или на кнопки сервисов, вы подтверждаете, что ознакомились и полностью принимаете условия <a href="#"> соглашения</a></p>
+    </div>
+    <div class="line-divider"></div>
+    <div class="down">
+        <label>HeadHunter</label>
+        <label>Помощь</label>
+        <label>Наши вакансии</label>
+        <label>Реклам на сайте</label>
+        <label>Требования к ПО</label>
+        <label>Инвесторам</label>
+        <label>Каталог компаний</label>
+        <label>Работа по профессиям</label>
+ </div>
+ <div class="down2">
+    <label>Этика и комплаенс</label>
+    <label>Оказание услуг</label>
+    <label>Использование сайтов</label>
+    <label>Защита персональных данных</label>
+    <label>Пользовательское соглашение</label>
+
+</div>
+<div class="line-divider22"></div>
+
+</div>
+
+</body>
+</html> 
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: white;
+}
+
+.hidden{
+    display:none;
+}
+.block{
+    display: block;
+}
+.mainscreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    top:0;
+}
+.up{
+  display:flex;
+  width:100%;
+  padding: 5px 0 0px 60px;
+  gap:5px;
+  font-size: 15px;
+  margin: 7px 0 0 100px;
+  gap:20px;
+ 
+}
+.up a{  
+    text-decoration: none;
+    color:#0070ff ;
+}
+.up a:hover{
+    color:#3A90FF;
+}
+.up a:hover{
+    color: orange;
+}
+.menurow{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    font-size: 20px;
+    margin: 20px 0 0 0px;
+    padding: 15px 0 15px 100px;
+    width:100%;
+    align-items: center;
+    gap:15px;
+    position: relative;
+}
+.upmenu{
+        width: auto;
+        display: flex;
+        height: inherit;
+        justify-content: center;
+        align-items: center;
+   
+}
+.upmenu i{
+    font-size: 50px;
+    color:white;
+
+}
+.upmenu-item2 a{
+color:white;
+text-decoration: none;
+margin: 0 0 0 10px;
+}
+
+.upmenu-item2 a:hover{
+    color:#0070ff;
+    }
+
+
+.upmenu-item3{
+        display: none;
+}
+.upmenuright{
+    display: flex;
+    gap:20px;
+    margin:0 100px 0 0;
+}
+.upmenuright button{
+    font-size: 20px;
+
+}
+
+.voiti2{
+    display: none;
+    border:none;
+    background: black;
+    color:white;
+    cursor: pointer;
+    font-size: 17px;
+    margin-left:5px;
+}
+.find i{
+        color:white;
+        margin:3px 10px 0px 0;
+        font-size: 20px;
+    
+}
+.icon i{
+    display: none;
+    margin-top:10px;
+}
+.icon{
+    margin-top:3px;
+    margin-right: 5px;
+}
+
+.find{
+    border:none;
+    background: black;
+    color:white;
+    cursor: pointer;
+    display: flex;
+    margin-top:10px;
+    
+}
+.register{
+    border: 1px solid greenyellow;
+    border-radius: 40px;
+    padding: 10px;
+    background: black;
+    color:rgba(172, 255, 47, 0.692);
+}
+.register:hover{
+    color:greenyellow;
+
+}
+.voiti{
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 10px;
+    background: black;
+    color:rgba(255, 255, 255, 0.852);
+}
+.voiti:hover{
+color:white;
+}
+
+.login{
+    
+    align-items: flex-start;
+    text-align: start;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 50px  0 0 0; 
+    font-size: 20px;
+    border: 1px solid #D7D7D7;
+    border-radius: 35px;
+    padding: 40px;
+    width: 430px;
+}
+.login h3{
+    margin: 0 0 20px 0px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.login input{
+    margin: 0 0 10px 0px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #D7D7D7; 
+    width: 100%;
+    padding: 13px 0 13px 10px;
+    outline: none;
+    cursor: pointer;
+    color: black; 
+}
+.login input input{
+    width: 100%;
+}
+.login input:hover{
+    border: 1px solid rgb(170, 169, 169); 
+
+}
+.input input[type=text]:focus{
+    border:2px solid  #0070ff;
+}
+.login a{
+    font-size: 17px;
+    text-decoration: none;
+    color:#0070ff;
+}
+.login .continue{
+    width: 100%;
+    margin: 20px 0 20px  0;
+    padding: 15px 0 15px 0;
+    font-size: 17px;
+    border-radius: 10px;
+    background: #0070ff;
+    border:none;
+    color:white;
+}
+.login .continue:hover{
+    background:#3A90FF;
+}
+.login .icons{
+    display: flex;
+    align-items: center;  
+    margin: 10px 0 0 0 ;     
+    width: 100%;
+    font-size: 65px;
+    gap:30px;
+}
+
+.poisk{
+    align-items: flex-start;
+    text-align: start;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 25px  0 0 0; 
+    font-size: 17px;
+    border: 1px solid #D7D7D7;
+    border-radius: 35px;
+    padding: 40px;
+    width: 430px;
+}
+.poisk h3{
+    font-weight: 300;
+    margin: 0 0 7px 0;
+}
+.poisk h5{
+    font-size: 17px;
+    font-weight: 100;
+    color:gray;
+}
+.poisk button{
+    width: 100%;
+    margin: 10px 0 10px  0;
+    padding: 15px 0 15px 0;
+    font-size: 17px;
+    border-radius: 10px;
+    background:#edf6ff;
+    border:none;
+    color:#0070ff;
+}
+.poisk button:hover{
+  background:#F8FAFD;
+}
+
+
+.password{
+    align-items: flex-start;
+    text-align: start;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 50px  0 0 0; 
+    font-size: 20px;
+    border: 1px solid #D7D7D7;
+    border-radius: 35px;
+    padding: 40px;
+    width: 430px;
+}
+.password .some{
+    display: flex;
+    gap:10px;
+}
+.password .displayLogin{
+    margin-top:3px;
+}
+.password h3{
+    margin: 0 0 20px 0px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.password p{
+    font-size: 18px;
+    color:gray;
+    margin: 0px 0 25px 0;
+}
+.password input{
+    margin: 0 10px 10px 0px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #D7D7D7; 
+    width: 100%;
+    padding: 13px 0 13px 10px;
+    outline: none;
+    cursor: pointer;
+    color: black; 
+}
+.password input{
+    width: 100%;
+}
+.password input:hover{
+    border: 1px solid rgb(170, 169, 169); 
+}
+.password  input input[type=text]:focus{
+    border:2px solid  #0070ff;
+}
+.password a{
+    font-size: 17px;
+    text-decoration: none;
+    color:#0070ff;
+}
+.password a:hover{
+    color:#2e7ee6;
+}
+.password .btn{
+    width: 100%;
+    margin: 20px 0 20px  0;
+    padding: 15px 0 15px 0;
+    font-size: 17px;
+    border-radius: 10px;
+    background: #D7D7D7;
+    border:none;
+    color:white;
+}
+.underpoisk{
+    align-items: flex-start;
+    text-align: start;
+    overflow: hidden;
+    flex-direction: column;
+    font-size: 15px;
+    width: 400px;
+    margin: 20px;
+}
+.underpoisk p a{
+     text-decoration: none;
+    color:#0070ff;
+}
+.line-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #D7D7D7;
+    margin: 100px 0 50px 0;
+  }
+  .down {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 30px 0 0 200px;    
+    padding: 0;            
+    width: 100%;
+    font-size: 20px;
+    gap:20px;
+    color: gray;
+}
+
+.down2{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin: 60px 0 0 200px;      
+    padding: 0;            
+    width: 100%;
+    font-size: 20px;
+    gap:20px;
+    color:gray;
+}
+.line-divider22{
+    width: 80%;
+    height: 1px;
+    background-color: #D7D7D7;
+    margin: 60px 0;
+}
+@media screen and (max-width: 767px) { 
+    .up{
+     display: none;
+    }
+    .menurow{
+        margin:0;
+        padding: 10px 0 10px 20px;
+    }
+    .menurow .voiti{
+        display: none;
+    }
+    .menurow .find
+    {
+        display: none;
+    }
+    .menurow .register{
+        display: none;
+    }
+    .upmenuright  i{
+        display: inline;
+        font-size: 20px;
+        color: white;
+        margin: 3px 0 0 0;
+   
+    }
+    .upmenuright{
+        margin:0 13px 0 0;
+    }
+  
+    .upmenu-item2{
+        display: none;
+    }
+    .upmenu-item3{
+        display: flex;
+        gap:2px;
+        font-size: 17px;
+        color: white;
+    }
+    .upmenu-item3 p{
+        margin: 0 0 0 10px;
+    }
+    .upmenu-item3 i{
+        font-size: 22px;
+    }
+    .voiti2{
+       display: flex;
+       margin:0 0px 0 8px;
+       font-size: 17px;
+    }
+    .voiti2 i{
+      margin:3px 5px 0 0;  
+    }
+   
+    .icon i{
+        margin:10px 0 0 0 ;
+    }
+
+    .down{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin: 30px 0 0 50px;    
+        padding: 0;            
+        width: 100%;
+    }
+    
+.down2{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    margin: 60px 0 0 50px;      
+    padding: 0;            
+    width: 100%;
+    font-size: 15px;
+    gap:20px;
+    color:gray;
+    
+}
+
+
+.login{
+    
+    align-items: flex-start;
+    text-align: start;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 50px  0 0 0; 
+    font-size: 12px;
+    border: 1px solid #D7D7D7;
+    border-radius: 35px;
+    padding: 30px;
+    width: 350px;
+}
+.login h3{
+    margin: 0 0 20px 0px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.login input{
+    margin: 0 0 10px 0px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #D7D7D7; 
+    width: 100%;
+    padding: 13px 0 13px 10px;
+    outline: none;
+    cursor: pointer;
+    color: black; 
+}
+.login input input{
+    width: 100%;
+}
+.login input:hover{
+    border: 1px solid rgb(170, 169, 169); 
+
+}
+.input input[type=text]:focus{
+    border:2px solid  #0070ff;
+}
+.login a{
+    font-size: 15px;
+    text-decoration: none;
+    color:#0070ff;
+}
+.login .continue{
+    width: 100%;
+    margin: 20px 0 20px  0;
+    padding: 15px 0 15px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #0070ff;
+    border:none;
+    color:white;
+}
+.login .continue:hover{
+    background:#3A90FF;
+}
+.login .icons{
+    display: flex;
+    align-items: center;  
+    margin: 10px 0 0 0 ;     
+    width: 100%;
+    font-size: 45px;
+    gap:30px;
+}
+
+.poisk{
+    align-items: flex-start;
+    text-align: start;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 25px  0 0 0; 
+    font-size: 15px;
+    border: 1px solid #D7D7D7;
+    border-radius: 35px;
+    padding: 30px;
+    width: 350px;
+}
+.poisk h3{
+    font-weight: 300;
+    margin: 0 0 7px 0;
+}
+.poisk h5{
+    font-size: 15px;
+    font-weight: 100;
+    color:gray;
+}
+.poisk button{
+    width: 100%;
+    margin: 10px 0 10px  0;
+    padding: 15px 0 15px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    background:#edf6ff;
+    border:none;
+    color:#0070ff;
+}
+.poisk button:hover{
+  background:#F8FAFD;
+}
+
+
+.password{
+    align-items: flex-start;
+    text-align: start;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 50px  0 0 0; 
+    font-size: 20px;
+    border: 1px solid #D7D7D7;
+    border-radius: 35px;
+    padding: 40px;
+    width: 430px;
+}
+.password .some{
+    display: flex;
+    gap:10px;
+}
+.password .displayLogin{
+    margin-top:3px;
+}
+.password h3{
+    margin: 0 0 20px 0px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.password p{
+    font-size: 18px;
+    color:gray;
+    margin: 0px 0 25px 0;
+}
+.password input{
+    margin: 0 10px 10px 0px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #D7D7D7; 
+    width: 100%;
+    padding: 13px 0 13px 10px;
+    outline: none;
+    cursor: pointer;
+    color: black; 
+}
+.password input{
+    width: 100%;
+}
+.password input:hover{
+    border: 1px solid rgb(170, 169, 169); 
+}
+.password  input input[type=text]:focus{
+    border:2px solid  #0070ff;
+}
+.password a{
+    font-size: 17px;
+    text-decoration: none;
+    color:#0070ff;
+}
+.password a:hover{
+    color:#2e7ee6;
+}
+.password .btn{
+    width: 100%;
+    margin: 20px 0 20px  0;
+    padding: 15px 0 15px 0;
+    font-size: 17px;
+    border-radius: 10px;
+    background: #D7D7D7;
+    border:none;
+    color:white;
+}
+.underpoisk{
+    align-items: flex-start;
+    text-align: start;
+    overflow: hidden;
+    flex-direction: column;
+    font-size: 15px;
+    width: 330px;
+    margin: 20px;
+}
+.underpoisk p a{
+     text-decoration: none;
+    color:#0070ff;
+}
+.down{
+    font-size: 15px;
+}
+
+}
+</style>
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+        const login = document.getElementById("login");
+        const poisk = document.getElementById("poisk");
+        const password = document.getElementById("password");
+        const continue1 = document.getElementById("continue1");
+        const logininput = document.getElementById("logininput");
+        const underpoisk = document.getElementById("underpoisk");
+        const voiti2 = document.getElementById("voiti2");
+        const find = document.getElementById("find");
+        const voiti = document.getElementById("voiti");
+
+        password.classList.add("hidden");
+        login.classList.add("block");
+        poisk.classList.add("block");
+        underpoisk.classList.add("block");
+        
+
+        continue1.addEventListener("click", (event) => {
+            event.preventDefault();
+            let loginValue = logininput.value.trim();
+            if (loginValue === "") {
+                alert("Enter a valid email address, phone number, or Skype name.");
+                return;
+            }
+
+            document.getElementById("displayLogin").textContent = loginValue;
+            
+            setTimeout(() => {
+            login.classList.remove("block");
+            login.classList.add("hidden");
+            poisk.classList.remove("block");
+            poisk.classList.add("hidden");
+            underpoisk.classList.remove("block");
+            underpoisk.classList.add("hidden");
+            password.classList.remove("hidden");
+            password.classList.add("block");
+            }, 1000);
+        });
+        voiti2.addEventListener("click", (event) => {
+            event.preventDefault();
+            let loginValue = logininput.value.trim();
+            if (loginValue === "") {
+                alert("Enter a valid email address, phone number, or Skype name.");
+                return;
+            }
+
+            document.getElementById("displayLogin").textContent = loginValue;
+            
+            setTimeout(() => {
+            password.classList.remove("block");
+            password.classList.add("hidden");
+            login.classList.remove("hidden");
+            login.classList.add("block");
+            poisk.classList.remove("hidden");
+            poisk.classList.add("block");
+            underpoisk.classList.remove("hidden");
+            underpoisk.classList.add("block");
+            }, 1000);
+        });
+        voiti.addEventListener("click", (event) => {
+            event.preventDefault();
+            let loginValue = logininput.value.trim();
+            if (loginValue === "") {
+                alert("Enter a valid email address, phone number, or Skype name.");
+                return;
+            }
+
+            document.getElementById("displayLogin").textContent = loginValue;
+            
+            setTimeout(() => {
+            password.classList.remove("block");
+            password.classList.add("hidden");
+            login.classList.remove("hidden");
+            login.classList.add("block");
+            poisk.classList.remove("hidden");
+            poisk.classList.add("block");
+            underpoisk.classList.remove("hidden");
+            underpoisk.classList.add("block");
+            }, 1000);
+        });
+
+     
+});
+</script>
